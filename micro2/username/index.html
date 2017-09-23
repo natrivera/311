@@ -100,14 +100,17 @@ function validateForm() {
 function inputMatch() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
+    var bool = true;	
 	
    if(username != person.username) {
    	document.getElementById('namealert').innerHTML = badname;
+	 bool = false; 
    }
    if(password != person.password) {
    	document.getElementById('passalert').innerHTML = badpass;
+	 bool = false;  
    }  	
-   	
+   	return bool;
 }	
 
 window.onload = function() {
