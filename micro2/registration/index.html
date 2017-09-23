@@ -63,6 +63,7 @@ function validateEmail() {
     if (pattern.test(emailText)) {
 	    if(emailText != person.email) {
 	    	document.getElementById('alerts').innerHTML = '<div class='alert alert-danger'><strong>Warning!  </strong>This email does not match our records.</div>';
+		return false;    
 	    }
 	    
         return true;
