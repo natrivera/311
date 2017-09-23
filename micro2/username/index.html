@@ -42,7 +42,7 @@
 	
 <div class="container-fluid">
 <h1>Username Page</h1>
-
+<div id="alerts"></div>
  <form id="form_val">
   <div class="form-group">
     <label >Username:</label>
@@ -60,6 +60,9 @@
 </form> 
 	
 <script type="text/javascript">
+var badInput = "<div class='alert alert-danger' role='alert'><strog>Warning!</strong>You must enter a valid input.</div>";	
+	
+	
 var person = {
 	username: "name",
 	password: "password"
@@ -90,6 +93,15 @@ function validateForm() {
        alert('You must enter a Full Name.');
    }
 }
+	
+function inputMatch() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+	
+   if(username != person.username || password != person.password) {
+   	document.getElementById('alerts').append(badInput);
+   }	
+}	
 
 window.onload = function() {
     document.getElementById('form_val').onsubmit = validateForm;
