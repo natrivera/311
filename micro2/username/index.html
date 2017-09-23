@@ -99,7 +99,7 @@ function inputMatch() {
     var password = document.getElementById('password').value;
 	
    if(username != person.username || password != person.password) {
-   	document.getElementById('alerts').append(badInput);
+   	document.getElementById('alerts').innerHTML(badInput);
    }	
 }	
 
