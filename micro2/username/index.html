@@ -42,7 +42,10 @@
 	
 <div class="container-fluid">
 <h1>Username Page</h1>
-<div id="alerts"></div>
+<div id="alerts">
+	<div id="namealert"></div>
+	<div id="passalert"></div>
+</div>
  <form id="form_val">
   <div class="form-group">
     <label >Username:</label>
@@ -60,8 +63,8 @@
 </form> 
 	
 <script type="text/javascript">
-var badInput = "<div class='alert alert-danger' role='alert'><strog>Warning!</strong>You must enter a valid input.</div>";	
-	
+var badname = "<div class='alert alert-danger' role='alert'><strog>Warning!</strong>Name does not match our records.</div>";	
+var badpass = "<div class='alert alert-danger' role='alert'><strog>Warning!</strong>Password does not match our records.</div>";	
 	
 var person = {
 	username: "name",
@@ -98,9 +101,13 @@ function inputMatch() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 	
-   if(username != person.username || password != person.password) {
-   	document.getElementById('alerts').innerHTML = badInput;
-   }	
+   if(username != person.username) {
+   	document.getElementById('namealert').innerHTML = badname;
+   }
+   if(password != person.password) {
+   	document.getElementById('passalert').innerHTML = badpass;
+   }  	
+   	
 }	
 
 window.onload = function() {
