@@ -52,6 +52,7 @@
 </form> 
 
 <script type="text/javascript">
+var bademail = "<div class='alert alert-danger'><strong>Warning!  </strong>This email does not match our records.</div>";	
 var person = {
 	email: "name@mail.com"
 	};
@@ -62,7 +63,7 @@ function validateEmail() {
     var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
     if (pattern.test(emailText)) {
 	    if(emailText != person.email) {
-	    	document.getElementById('alerts').innerHTML = '<div class='alert alert-danger'><strong>Warning!  </strong>This email does not match our records.</div>';
+	    	document.getElementById('alerts').innerHTML = bademail;
 		return false;    
 	    }
 	    
