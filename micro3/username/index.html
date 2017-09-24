@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>CIS 311 Project</title>
+
+  <link src="/nav.js">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headlinks">
+		   <span class="icon-bar"></span>
+		   <span class="icon-bar"></span>
+		   <span class="icon-bar"></span>
+      </button>
+      </div>
+
+      <div class="nav navbar-nav navbar-collapse collapse" id="headlinks">
+        <ul class="nav navbar-nav">
+          <li ><a href="../">Home</a></li>
+          <li><a href="../about">About</a></li>
+          <li><a href="../contact">Contact</a></li>
+          <li class="dropdown active">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../registration">Registration</a></li>
+                    <li><a href="../username">Username</a></li>                   
+                </ul>
+	 </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	
+<div class="container-fluid">
+<h1>Username Page</h1>
+<div id="alerts">
+	<div id="namealert"></div>
+	<div id="passalert"></div>
+</div>
+ <form id="form_val">
+  <div class="form-group">
+    <label >Username:</label>
+    <input type="text" class="form-control" id="username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" class="form-control" id="password">
+  </div>
+  <div >
+    <label>Full Name:</label>
+    <input type="text" class="form-control" id="fullName">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> 
+	
+<script type="text/javascript">
+var badname = "<div class='alert alert-danger' role='alert'><strog>Warning!  </strong>Name does not match our records.</div>";	
+var badpass = "<div class='alert alert-danger' role='alert'><strog>Warning!  </strong>Password does not match our records.</div>";	
+	
+var person = {
+	username: "name",
+	password: "password"
+};
+	
+function validateForm() {
+    var unsername = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var name = document.getElementById('fullName').value;
+
+    var spaces = /^\\s*$/;
+
+    if (spaces.test(username)) {
+        ////return true;
+    } else {
+        alert('Invalid username: ' + username);
+        //return false;
+    }
+
+    if (spaces.test(password)) {
+        //return true;
+    } else {
+        alert('Invalid password: ' + password);
+        //return false;
+    }
+
+   if(name.length == 0) {
+       alert('You must enter a Full Name.');
+   }
+}
+	
+function inputMatch() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var bool = true;	
+	
+   if(username != person.username) {
+   	document.getElementById('namealert').innerHTML = badname;
+	 bool = false; 
+   }
+   if(password != person.password) {
+   	document.getElementById('passalert').innerHTML = badpass;
+	 bool = false;  
+   }  	
+   	return bool;
+}	
+
+window.onload = function() {
+    //document.getElementById('form_val').onsubmit = validateForm;
+    document.getElementById('form_val').onsubmit = inputMatch;	
+}
+</script>	
+
+	</div>
+</body>
+
+</html>
