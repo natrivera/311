@@ -1,5 +1,5 @@
 function updatenav() {
-    var page = document.getElementsByClassName("active")[0].innerHTML;
+    var page = $(".active").html();
 	console.log(page);
 	document.getElementById("navlist").innerHTML += "<li><a href='../data'>Data</a></li>";
 }
