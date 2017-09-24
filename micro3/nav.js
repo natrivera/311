@@ -1,7 +1,7 @@
 function updatenav() {
-    var page = $(".active").html();
+    var page = document.getElementsByClassName("active")[0].getElementByTagName("a")[0];
 	console.log(page);
-	console.log("aa");
+	
 	document.getElementById("navlist").innerHTML += "<li><a href='../data'>Data</a></li>";
 }
 
