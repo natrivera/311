@@ -1,6 +1,6 @@
 function updatenav() {
 	var page;
-	if(document.getElementsByClassName("active")[0].getElementsByTagName("a")[0].innerHTML == undefined) {
+	if(!document.getElementById('element').classList.contains("active")) {
 	   page = "data";
 	}
     page = document.getElementsByClassName("active")[0].getElementsByTagName("a")[0].innerHTML;
