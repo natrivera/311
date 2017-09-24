@@ -8,7 +8,7 @@ function updatenav() {
     
 	
 	if(page == "Home") {
-		document.getElementById("navlist").innerHTML += "<li><a href='./data'>Data</a></li>";
+		document.getElementById("navlist").innerHTML += "<li><a href='https://natrivera.github.io/311/micro3/data'>Data</a></li>";
 	} else {
 		document.getElementById("navlist").innerHTML += "<li><a href='../data'>Data</a></li>";
 	}
