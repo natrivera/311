@@ -9,8 +9,11 @@ function updatenav() {
 	
 	if(page == "Home") {
 		document.getElementById("navlist").innerHTML += "<li><a href='./data'>Data</a></li>";
+	} else if (paga == "data") {
+		document.getElementById("navlist").innerHTML += "<li id='new'><a href='../data'>Data</a></li>";
+		$("#new").addClass("active");
 	} else {
-		document.getElementById("navlist").innerHTML += "<li><a href='../data'>Data</a></li>";
+	        document.getElementById("navlist").innerHTML += "<li><a href='../data'>Data</a></li>";
 	}
 	console.log(page);
 }
