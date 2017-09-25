@@ -1,9 +1,9 @@
 function updatenav() {
 	var page;
-	if(!document.getElementById('navlist').classList.contains("active")) {
-	   page = "data";
-	} else {
+	if(document.getElementById('navlist').classList.contains("active")) {
 	   page = document.getElementsByClassName("active")[0].getElementsByTagName("a")[0].innerHTML;
+	} else {
+	   page = "data";
 	}
     
 	
