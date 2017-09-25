@@ -24,3 +24,8 @@ update the menu in one file, then use it across all of your pages.
 6.
 7.
 8.
+
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=iQufN1iZ5As
+" target="_blank"><img src="http://img.youtube.com/vi/iQufN1iZ5As/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
