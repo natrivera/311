@@ -15,7 +15,7 @@ function updatenav() {
 	} else {
 	        document.getElementById("navlist").innerHTML += "<li><a href='../data'>Data</a></li>";
 	}
-	console.log(page);
+	//console.log(page);
 }
 
 $("document").ready(function() {
