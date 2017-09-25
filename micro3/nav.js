@@ -1,6 +1,6 @@
 function updatenav() {
 	var page;
-	if(document.getElementById('navlist').classList.contains("active")) {
+	if($(".active").length) {
 	   page = document.getElementsByClassName("active")[0].getElementsByTagName("a")[0].innerHTML;
 	} else {
 	   page = "data";
