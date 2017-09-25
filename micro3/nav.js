@@ -9,7 +9,7 @@ function updatenav() {
 	
 	if(page == "Home") {
 		document.getElementById("navlist").innerHTML += "<li><a href='./data'>Data</a></li>";
-	} else if (paga == "data") {
+	} else if (page == "data") {
 		document.getElementById("navlist").innerHTML += "<li id='new'><a href='../data'>Data</a></li>";
 		$("#new").addClass("active");
 	} else {
