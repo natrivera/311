@@ -1,4 +1,4 @@
-Visit the working Microprojects
+## Visit the working Microprojects
 1. [Microproject 1](https://natrivera.github.io/311/micro1/) 
   <br>Decide upon a general project theme, related to a real world subject, company, or concept. 
   Create four pages then connect them with a Bootstrap menu. Create a version available via 
@@ -25,7 +25,7 @@ update the menu in one file, then use it across all of your pages.
 7.
 8.
 
-Learning Javascript
+## Learning Javascript
 1. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit1.html">Unit1</a> 
 2. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit2.html">Unit2</a>
 3. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit3.html">Unit3</a>
