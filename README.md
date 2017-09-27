@@ -26,15 +26,15 @@ update the menu in one file, then use it across all of your pages.
 8.
 
 Learning Javascript
-1. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-1.html">Unit-1</a> 
-2. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-2.html">Unit-2</a>
-3. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-3.html">Unit-3</a>
-4. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-4.html">Unit-4</a>
-5. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-5.html">Unit-5</a>
-6. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-6.html">Unit-6</a>
-7. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-7.html">Unit-7</a>
-8. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-8.html">Unit-8</a>
-9. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-9.html">Unit-9</a>
-10. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-10.html">Unit-10</a>
-11. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-11.html">Unit-11</a>
-12. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-12.html">Unit-12</a>
+1. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-1.html">Unit1</a> 
+2. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-2.html">Unit2</a>
+3. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-3.html">Unit3</a>
+4. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-4.html">Unit4</a>
+5. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-5.html">Unit5</a>
+6. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-6.html">Unit6</a>
+7. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-7.html">Unit7</a>
+8. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-8.html">Unit8</a>
+9. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-9.html">Unit9</a>
+10. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-10.html">Unit10</a>
+11. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-11.html">Unit11</a>
+12. <a target="_blank" href="https://natrivera.github.io/311/learning-javascript/unit-12.html">Unit12</a>
